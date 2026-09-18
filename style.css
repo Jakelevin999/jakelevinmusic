@@ -5,3 +5,19 @@
 .credentials{grid-template-columns:.9fr repeat(4,1.4fr)}.credentials small{display:block;color:#999;line-height:1.5;margin-top:22px;max-width:220px}
 .phrase{padding:70px 4vw;border-bottom:1px solid var(--line)}.phrase p{margin:0;font:500 clamp(28px,4vw,58px)/1 "Space Grotesk";letter-spacing:-.04em}.phrase em{font-weight:400;color:#999}
 @media(max-width:760px){.hero h1{font-size:20vw;white-space:normal}.workcard{min-height:280px;border-right:0;border-bottom:1px solid var(--line)}.credentials{grid-template-columns:1fr}.phrase{padding:55px 20px}}
+/* hero refinement */
+.hero{min-height:700px;padding-top:10vh}
+.hero .kicker{margin-bottom:30px}
+.hero h1{margin:auto 0 70px;font-size:clamp(92px,16vw,250px);line-height:.7;letter-spacing:-.09em}
+.hero-proof{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hero-proof span{padding:18px 16px 18px 0;font:600 10px "Space Grotesk";letter-spacing:.13em;color:#8d8d88;border-right:1px solid var(--line)}
+.hero-proof span:last-child{border-right:0;padding-left:16px;color:var(--acid)}
+.workcard{position:relative;overflow:hidden}
+.workcard:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--acid);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+.workcard:hover:after{transform:scaleX(1)}
+.workcard:hover h3{transform:translateX(5px)}
+.workcard h3{transition:transform .25s ease}
+.credentials>div{padding-right:20px}
+.credentials a:hover{color:var(--acid)}
+.credentials small a{display:inline-block;margin-top:14px;color:var(--fg);font:600 9px "Space Grotesk";letter-spacing:.12em}
+@media(max-width:760px){.hero{min-height:610px}.hero h1{font-size:22vw;margin:auto 0 45px}.hero-proof{grid-template-columns:1fr 1fr}.hero-proof span{border-bottom:1px solid var(--line)}}
