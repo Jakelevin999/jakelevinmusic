@@ -21,3 +21,16 @@
 .credentials a:hover{color:var(--acid)}
 .credentials small a{display:inline-block;margin-top:14px;color:var(--fg);font:600 9px "Space Grotesk";letter-spacing:.12em}
 @media(max-width:760px){.hero{min-height:610px}.hero h1{font-size:22vw;margin:auto 0 45px}.hero-proof{grid-template-columns:1fr 1fr}.hero-proof span{border-bottom:1px solid var(--line)}}
+/* compact work index */
+.cards,.workcard{display:none!important}
+.work{padding-bottom:90px}
+.work-head{margin-bottom:28px}
+.work-head h2{font-size:clamp(54px,7vw,105px)}
+.worklist{border-top:1px solid var(--line)}
+.worklist>a{display:grid;grid-template-columns:70px 1.15fr 1.6fr auto;align-items:center;gap:24px;min-height:118px;border-bottom:1px solid var(--line);transition:padding .22s ease,background .22s ease}
+.worklist>a:hover{padding-left:14px;background:#101010}
+.worklist span{font:500 10px "Space Grotesk";color:#666}
+.worklist h3{font:600 clamp(25px,2.4vw,40px) "Space Grotesk";letter-spacing:-.035em;margin:0}
+.worklist p{font-size:10px;letter-spacing:.13em;color:#777;margin:0}
+.worklist b{font:600 9px "Space Grotesk";letter-spacing:.14em;color:var(--acid)}
+@media(max-width:760px){.worklist>a{grid-template-columns:38px 1fr auto;gap:12px;min-height:90px}.worklist p{display:none}.worklist h3{font-size:25px}}
